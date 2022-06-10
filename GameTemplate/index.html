@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DivGame</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapgame">
+        <div class="gamescreen" id="startscreen">Start Screen <br/><br/> Nothing here</div>
+        <div class="gamescreen" id="gamescreen">GameScreen <br/><br/> Nothing here</div>
+        <div class="gamescreen" id="gameoverscreen">GameOver <br/><br/> Nothing here</div>
+        <div class="gamescreen" id="pausescreen">PauseScreen <br/><br/> Nothing here</div>
+        <div class="gamescreen" id="loading" onclick="Load()">
+            <div class="loader">
+                <div class="inner one"></div>
+                <div class="inner two"></div>
+                <div class="inner three"></div>
+            </div>
+            <div class="txt" id="changetxt">
+                Loading
+            </div>
+            <div class="signature">
+                <div class="madeby">
+                    Made With
+                </div>
+                <div class="cne">
+                    DivGames
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="GameManager.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
