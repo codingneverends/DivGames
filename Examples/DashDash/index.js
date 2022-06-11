@@ -49,6 +49,7 @@ function audiomanagerinit() {
 function startgame() {
     Score.start();
     gameinstance = new GameInstance(100, () => {
+        //Handle game over
         gameinstance.RemoveGameobject("blockgenerator");
         for (var i = 0; i < gameinstance.gameobjects.length; i++) {
             var _classobject = gameinstance.gameobjects[i]._classobject;
@@ -56,6 +57,7 @@ function startgame() {
         }
         GameOver();
     });
+    //RestCodes
     gameinstance.AddGameObject(block_generator);
     gameinstance.run();
 }

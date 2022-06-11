@@ -47,7 +47,10 @@ function audiomanagerinit() {
 }
 
 function startgame() {
-    gameinstance = new GameInstance(100);
+    gameinstance = new GameInstance(100, () => {
+        //Handle game over
+        GameOver();
+    });
     //Rest Codes
 }
 
